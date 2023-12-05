@@ -16,12 +16,12 @@
                     query: {
                       code: {
                         $or: [
-						'http://loinc.org|8302-2', //Body Height
-						//'http://loinc.org|8462-4', //Diastolic BP
-                        //'http://loinc.org|8480-6', //Systolic BP
-						'http://loinc.org|2085-9', //Cholesterol HDL
-                        'http://loinc.org|2089-1', //Cholesterol LDL
-						'http://loinc.org|85354-9'] //Systolic and Diastolic BP
+				'http://loinc.org|8302-2', //Body Height
+				//'http://loinc.org|8462-4', //Diastolic BP
+                        	//'http://loinc.org|8480-6', //Systolic BP
+				'http://loinc.org|2085-9', //Cholesterol HDL
+                        	'http://loinc.org|2089-1', //Cholesterol LDL
+				'http://loinc.org|85354-9'] //Systolic and Diastolic BP
                       },
 					  date: 'gt1980-01-01'
                     }
