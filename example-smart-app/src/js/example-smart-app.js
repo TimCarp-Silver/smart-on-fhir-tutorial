@@ -105,8 +105,8 @@
     };
   }
  
-	for(let i = 0; i < allergies.length; i++){
-	    p.allergies +=  allergies[i].code.text +"<br>";
+	for(let i = 0; i < alg.length; i++){
+	    p.allergies +=  alg[i].code.text +"<br>";
 	}
 	 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
