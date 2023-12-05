@@ -40,9 +40,7 @@
 	  console.log(obv);
 	  console.log(allergies);
 		
-	  for(let i = 0; i < a.length; i++){
-		p.allergies +=  
-			}	  
+	 	  
 	  var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
