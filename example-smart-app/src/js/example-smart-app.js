@@ -86,7 +86,7 @@
     return ret.promise();
 
   };
-  for (let i=0; ; i++)
+ 
       
   function defaultPatient(){
     return {
