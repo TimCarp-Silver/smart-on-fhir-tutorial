@@ -106,7 +106,7 @@
   }
  
 	for(let i = 0; i < allergies.length; i++){
-	    p.allergies +=  allergires[i].code.text +"<br>";
+	    p.allergies +=  allergies[i].code.text +"<br>";
 	}
 	 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
