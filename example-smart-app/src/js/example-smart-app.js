@@ -40,6 +40,9 @@
 	  console.log(obv);
 	  console.log(allergies);
 		
+	  for(let i = 0; i < a.length; i++){
+		p.allergies +=  
+		  
 	  var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
@@ -103,7 +106,11 @@
       allergies: {value: ''}	    
     };
   }
-
+ 
+	for(let i = 0; i < allergies.length; i++){
+	    p.allergies +=  allergires[i].code.text +"<br>";
+	}
+	 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
     var formattedBPObservations = [];
     BPObservations.forEach(function(observation){
@@ -144,7 +151,8 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
-    $('#body').html(p.body)	  
+    $('#body').html(p.body);
+    $('#allergies').html(p.allergies)	  
   };
 
 })(window);
