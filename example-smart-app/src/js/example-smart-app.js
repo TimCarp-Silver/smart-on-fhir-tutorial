@@ -27,11 +27,20 @@
 					  date: 'gt1980-01-01'
                     }
                   });
+	  var alg = smart.patient.api.fetchAll({
+                    type: 'AllergyIntolerance',
+                    query: {
+                      "clinical-status": "active"
+                    }
+                  });
+        $.when(pt, obv, alg).fail(onError);
 
-        $.when(pt, obv).fail(onError);
-
-        $.when(pt, obv).done(function(patient, obv) {
-          var byCodes = smart.byCodes(obv, 'code');
+        $.when(pt, obv, alg).done(function(patient, obv, allergies) {
+          console.log(patient);
+	  console.log(obv);
+	  console.log(allergies);
+		
+	  var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
           var fname = '';
@@ -89,7 +98,8 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
-      body: {value: ''}	    
+      body: {value: ''},	 
+      allergies: {value: ''}	    
     };
   }
 
