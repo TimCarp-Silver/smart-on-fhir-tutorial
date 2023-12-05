@@ -133,7 +133,7 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
-    $('#body').htmp(p.body)	  
+    $('#body').html(p.body)	  
   };
 
 })(window);
